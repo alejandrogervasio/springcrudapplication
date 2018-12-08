@@ -1,0 +1,6 @@
+com\classbox\crud\application\Application.class
+com\classbox\crud\application\entities\Persona.class
+com\classbox\crud\application\controllers\PersonController.class
+com\classbox\crud\application\services\FileUploadService.class
+com\classbox\crud\application\services\SimpleFileUploadService.class
+com\classbox\crud\application\repositories\PersonRepository.class

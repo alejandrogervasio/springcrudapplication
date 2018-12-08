@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Registrar Persona</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="bg-primary text-white px-5 py-3 my-5">Registrar Persona</h2>
+                    <div class="my-5">
+                        <form th:action="@{/addperson}" th:object="${person}" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="dni" class="font-weight-bold">DNI</label>
+                                <input type="text" class="form-control" id="dni" name="dni" placeholder="DNI">
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre" class="font-weight-bold">Nombre</label>
+                                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido" class="font-weight-bold">Apellido</label>
+                                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="edad" class="font-weight-bold">Edad</label>
+                                <input type="text" name="edad" class="form-control" id="edad" placeholder="Edad">
+                            </div>
+                            <div class="form-group">
+                                <label for="imagen" class="font-weight-bold">Imagen</label>
+                                <input type="file" name="imagen" class="form-control" id="imagen">
+                            </div>
+                            <input type="submit" class="btn btn-primary my-5" value="Registrar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
