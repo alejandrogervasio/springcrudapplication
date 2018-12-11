@@ -24,7 +24,7 @@ public class PersonController {
     
     @Autowired
     public PersonController(PersonRepository personRepository, 
-            @Qualifier("SimpleFileUploadService")FileUploadService fileUploadService) {
+            @Qualifier("SimpleFileUploadService") FileUploadService fileUploadService) {
         this.personRepository = personRepository;
         this.fileUploadService = fileUploadService;
     }
