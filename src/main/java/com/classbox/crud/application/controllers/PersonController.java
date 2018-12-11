@@ -23,7 +23,7 @@ public class PersonController {
     private final FileUploadService fileUploadService;
     
     @Autowired
-    public PersonController(PersonRepository personRepository, @Qualifier("SimpleFileUploadService") FileUploadService fileUploadService) {
+    public PersonController(PersonRepository personRepository, @Qualifier("simpleFileUploadService") FileUploadService fileUploadService) {
         this.personRepository = personRepository;
         this.fileUploadService = fileUploadService;
     }

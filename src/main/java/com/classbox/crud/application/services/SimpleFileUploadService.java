@@ -3,10 +3,10 @@ package com.classbox.crud.application.services;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
-@Service(value = "SimpleFileUploadService")
+@Component("simpleFileUploadService")
 public class SimpleFileUploadService implements FileUploadService {
 
     private String uploadDirectory = "C:\\imagenes\\";
