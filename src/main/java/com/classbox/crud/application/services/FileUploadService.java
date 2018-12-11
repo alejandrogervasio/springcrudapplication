@@ -7,5 +7,5 @@ public interface FileUploadService {
     
     void uploadFile(MultipartFile file) throws IOException;
     
-    public byte[] getFileAsByteArray(String fileName) throws IOException;
+    byte[] getFileAsByteArray(String fileName) throws IOException;
 }
