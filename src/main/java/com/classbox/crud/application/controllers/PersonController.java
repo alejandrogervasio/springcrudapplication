@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -84,7 +85,7 @@ public class PersonController {
         return "index";
     }
     
-    @GetMapping("/images/{imageName}")
+    @GetMapping(value = "/images/{imageName}", produces = MediaType.IMAGE_JPEG_VALUE)
     @ResponseBody
     public byte[] getPersonImage(@PathVariable("imageName") String imageName) throws IOException {
         return fileUploadService.getFileAsByteArray(imageName);
