@@ -2,7 +2,7 @@ package com.classbox.crud.application.tests;
 
 import com.classbox.crud.application.controllers.PersonController;
 import com.classbox.crud.application.repositories.PersonRepository;
-import com.classbox.crud.application.services.SimpleFileUploadService;
+import com.classbox.crud.application.services.FileUploadService;
 import java.util.ArrayList;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
@@ -26,7 +26,7 @@ public class PersonControllerUnitTest {
     private PersonRepository personRepository;
 
     @MockBean
-    private SimpleFileUploadService simpleFileUploadService;
+    private FileUploadService fileUploadService;
 
     @Autowired
     PersonController personController;
