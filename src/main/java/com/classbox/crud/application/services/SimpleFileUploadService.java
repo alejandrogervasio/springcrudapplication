@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class SimpleFileUploadService implements FileUploadService {
 
     private String uploadDirectory = "C:\\imagenes\\";
-
+    
     public void setUploadDirectory(String uploadDirectory) {
         this.uploadDirectory = uploadDirectory;
     }
